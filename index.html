@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Picker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pick a Chocolate 🍫</h1>
+    <p>Each chocolate reveals a special message for you!</p>
+
+    <div class="chocolate-container">
+        <div class="chocolate" onclick="unwrapChocolate(1)">
+            <div class="choco-name">Milk Chocolate</div>
+        </div>
+        <div class="chocolate" onclick="unwrapChocolate(2)">
+            <div class="choco-name">Dark Chocolate</div>
+        </div>
+        <div class="chocolate" onclick="unwrapChocolate(3)">
+            <div class="choco-name">White Chocolate</div>
+        </div>
+    </div>
+
+    <p id="message"></p>
+
+    <div id="surprise-box" class="hidden" onclick="showFinalMessage()">🎁 Tap for a final surprise!</div>
+    <p id="final-message" class="hidden">"You've unwrapped all the chocolates, just like you've unwrapped my heart. You are my sweetest dream, my forever love!"</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
